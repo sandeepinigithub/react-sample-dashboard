@@ -1,0 +1,15 @@
+.router-container {
+    left: 290px;
+    /* top: 100px; */
+    top: 0px;
+    position: relative;
+    height: auto;
+    width: calc(100vw - 335px);
+}
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    background-color: #1771b7;
+}

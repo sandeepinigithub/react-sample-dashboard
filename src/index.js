@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter, HashRouter } from 'react-router-dom';
+
+// +++++++ import bootstrap css file ++++++++
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { AuthProvider } from './authentication/AuthContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    </HashRouter>
   </React.StrictMode>
 );
 
